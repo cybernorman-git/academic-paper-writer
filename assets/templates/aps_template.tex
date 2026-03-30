@@ -1,0 +1,84 @@
+% APS Template for PRB / PRL
+% Change prb to prl for Physical Review Letters
+\documentclass[aps,prb,twocolumn,showpacs,amsmath,amssymb,floatfix]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+
+% Placeholder for missing figures
+\newcommand{\placeholder}[1]{%
+  \fbox{\parbox{0.9\columnwidth}{\centering\small\textit{[FIGURE: #1]}}}}
+
+\begin{document}
+
+% ─── Title & Authors ─────────────────────────────────────────────────────────
+\title{Title of the Paper}
+
+\author{Author One}
+\author{Author Two}
+\author{Corresponding Author}
+\email{corresponding@email.com}
+\affiliation{Department of Applied Physics, University, Country}
+
+\date{\today}
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+\begin{abstract}
+Abstract text here (≤600 words for PRB; 1 paragraph).
+\end{abstract}
+
+% PRL only: uncomment and fill in
+%\pacs{73.22.-f, 75.70.Ak, 78.55.-m}
+
+\maketitle
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{\label{sec:intro}Introduction}
+
+Context and motivation.~\cite{ref1}
+Specific problem.~\cite{ref2,ref3}
+Prior work.~\cite{ref4}
+In this work, we...
+
+% ─── Methods ─────────────────────────────────────────────────────────────────
+\section{\label{sec:methods}Experimental Methods}
+
+\subsection{Sample Preparation}
+
+\subsection{Measurement Setup}
+
+% ─── Results ─────────────────────────────────────────────────────────────────
+\section{\label{sec:results}Results}
+
+\subsection{Subsection Title}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Figure description}
+  \caption{Caption text. (a) Panel a. (b) Panel b.}
+  \label{fig:fig1}
+\end{figure}
+
+% ─── Discussion ──────────────────────────────────────────────────────────────
+\section{\label{sec:discussion}Discussion}
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+\section{\label{sec:conclusion}Conclusion}
+
+In summary, we have...
+
+% ─── Acknowledgments ─────────────────────────────────────────────────────────
+\begin{acknowledgments}
+The authors thank...
+This work was supported by...
+\end{acknowledgments}
+
+% ─── References ──────────────────────────────────────────────────────────────
+\bibliography{refs}
+
+\end{document}

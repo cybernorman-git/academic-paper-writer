@@ -1,0 +1,113 @@
+% ACS Nano / Nano Letters Template
+% Change journal= to: nalefd (Nano Letters), ancac3 (ACS Nano)
+\documentclass[journal=nalefd,manuscript=article]{achemso}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+
+% Placeholder for missing figures
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+    \fbox{\parbox{0.9\columnwidth}{\centering\small\textit{[FIGURE: #1]}}}
+  \end{center}
+}
+
+% ─── Authors ─────────────────────────────────────────────────────────────────
+\author{Author One}
+\affiliation{Department of Applied Physics, University, Country}
+
+\author{Author Two}
+\affiliation{Department of Applied Physics, University, Country}
+
+\author{Corresponding Author}
+\email{corresponding@email.com}
+\affiliation{Department of Applied Physics, University, Country}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+\title{Title of the Paper}
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+\begin{document}
+
+\begin{abstract}
+Abstract text here (≤150 words). First sentence states the key result.
+Context sentence. Problem sentence. Approach sentence. Key result with numbers.
+Significance/implication sentence.
+\end{abstract}
+
+\begin{tocentry}
+  % Table of contents image (ACS requires this)
+  \placeholder{TOC graphic: visual summary of the work}
+\end{tocentry}
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{Introduction}
+
+Broad context and motivation.\cite{ref1}
+Specific problem and gap in knowledge.\cite{ref2,ref3}
+Prior approaches and limitations.\cite{ref4}
+Here we demonstrate...\cite{ref5}
+
+% ─── Results and Discussion ──────────────────────────────────────────────────
+\section{Results and Discussion}
+
+\subsection{Device Architecture and Characterization}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Device schematic and characterization data (AFM, Raman, MOKE)}
+  \caption{\textbf{Device architecture.}
+           (a) Schematic cross-section.
+           (b) AFM topography.
+           (c) Raman spectra.
+           (d) MOKE hysteresis loop at \SI{300}{\kelvin}.}
+  \label{fig:device}
+\end{figure}
+
+\subsection{Main Result Subsection Title}
+
+\begin{figure*}[htbp]
+  \centering
+  \placeholder{Main result figure spanning two columns}
+  \caption{\textbf{Main results.}
+           (a)--(d) Description of panels.}
+  \label{fig:main}
+\end{figure*}
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+\section{Conclusion}
+
+In summary, we have demonstrated...
+The key result of X shows...
+Our results open a route toward...
+
+% ─── Methods ─────────────────────────────────────────────────────────────────
+\section{Experimental Methods}
+
+\subsection{Sample Preparation}
+
+\subsection{Optical Measurements}
+
+\subsection{Data Analysis}
+
+% ─── Acknowledgments ─────────────────────────────────────────────────────────
+\begin{acknowledgement}
+The authors acknowledge...
+This work was supported by...
+\end{acknowledgement}
+
+% ─── Supporting Information ──────────────────────────────────────────────────
+\begin{suppinfo}
+Figure S1: [Description].
+This material is available free of charge via the Internet at \url{http://pubs.acs.org}.
+\end{suppinfo}
+
+% ─── References ──────────────────────────────────────────────────────────────
+\bibliography{refs}
+
+\end{document}

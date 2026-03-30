@@ -1,0 +1,105 @@
+% Simulated Peer Review Reports Template
+\documentclass[11pt, a4paper]{article}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{Confidential — Peer Review Reports}}
+\rfoot{\thepage}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Peer Review Reports}\\[0.5em]
+  {\large Manuscript: \textit{[PAPER TITLE]}}\\[0.3em]
+  {\large Journal: [TARGET JOURNAL]}\\[0.3em]
+  {\small Generated: \today}
+\end{center}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+% ─── Reviewer 1 ──────────────────────────────────────────────────────────────
+\section{Reviewer 1 — Methodology \& Novelty}
+
+\subsection*{Summary}
+[1–2 paragraph summary of what the reviewer understood the paper to claim]
+
+\subsection*{Assessment}
+\textbf{Recommendation:} \textcolor{orange}{Major Revision} % or Minor/Accept/Reject
+
+\textbf{Overall:} [1 sentence overall assessment]
+
+\subsection*{Major Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{M\arabic*.}]
+  \item \textbf{[Issue title]:} [Detailed comment with reference to specific figure/section/equation. Request specific additional experiment or analysis.]
+  \item \textbf{[Issue title]:} [Comment]
+  \item \textbf{[Issue title]:} [Comment]
+\end{enumerate}
+
+\subsection*{Minor Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{m\arabic*.}]
+  \item [Minor comment]
+  \item [Minor comment]
+\end{enumerate}
+
+\vspace{2em}
+
+% ─── Reviewer 2 ──────────────────────────────────────────────────────────────
+\section{Reviewer 2 — Data Quality \& Reproducibility}
+
+\subsection*{Summary}
+[Summary]
+
+\subsection*{Assessment}
+\textbf{Recommendation:} \textcolor{orange}{Major Revision}
+
+\textbf{Overall:} [Overall assessment]
+
+\subsection*{Major Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{M\arabic*.}]
+  \item \textbf{[Issue title]:} [Comment]
+  \item \textbf{[Issue title]:} [Comment]
+\end{enumerate}
+
+\subsection*{Minor Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{m\arabic*.}]
+  \item [Minor comment]
+  \item [Minor comment]
+\end{enumerate}
+
+\vspace{2em}
+
+% ─── Reviewer 3 ──────────────────────────────────────────────────────────────
+\section{Reviewer 3 — Clarity \& Significance}
+
+\subsection*{Summary}
+[Summary]
+
+\subsection*{Assessment}
+\textbf{Recommendation:} \textcolor{green!60!black}{Minor Revision}
+
+\textbf{Overall:} [Overall assessment]
+
+\subsection*{Major Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{M\arabic*.}]
+  \item \textbf{[Issue title]:} [Comment]
+\end{enumerate}
+
+\subsection*{Minor Comments}
+\begin{enumerate}[leftmargin=*, label=\textbf{m\arabic*.}]
+  \item [Minor comment]
+  \item [Minor comment]
+  \item [Minor comment]
+\end{enumerate}
+
+\end{document}
