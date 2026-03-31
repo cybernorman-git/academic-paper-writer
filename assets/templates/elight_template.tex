@@ -1,0 +1,158 @@
+% eLight Journal Template (Springer Nature / Light Publishing Group)
+% Publisher: SpringerOpen (open access)
+% Style: Springer Nature sn-jnl class
+% Abstract: ≤200 words; no citations, no abbreviations
+% Keywords: 3–10 keywords
+% Figures: ≥300 dpi; multi-panel combined into one file; uploaded separately
+% References: numbered, [1] style
+% Double-blind review: remove author info for initial submission
+
+\documentclass[lineno]{sn-jnl}
+% Options: lineno (line numbers), iicol (two-column), referee (double-space)
+% Download sn-jnl.cls from: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+
+% Placeholder macro for missing figures
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+    \fbox{\parbox{0.9\columnwidth}{\centering\small\textit{[FIGURE: #1]}}}
+  \end{center}
+}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+\title[Short title (≤40 chars)]{Full Title of the eLight Manuscript (7–25 words)}
+
+% ─── Authors (remove for double-blind initial submission) ─────────────────────
+\author[1]{\fnm{First} \sur{Author}}
+\author[1,2]{\fnm{Second} \sur{Author}}
+\author*[1,2]{\fnm{Corresponding} \sur{Author}}
+
+\affil[1]{\orgdiv{Department of Physics}, \orgname{University Name}, \orgaddress{\city{City}, \country{Country}}}
+\affil[2]{\orgdiv{State Key Laboratory of ...}, \orgname{Institute Name}, \orgaddress{\city{City}, \country{Country}}}
+
+\corresp{corresponding@email.com}
+
+\begin{document}
+
+\maketitle
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+% ≤200 words; no citations; minimize abbreviations
+% Structure: background → problem → approach → result → significance
+\begin{abstract}
+Background sentence placing the work in context of modern photonics/light science.
+Problem sentence identifying the unresolved challenge or limitation of existing approaches.
+``Here, we [demonstrate/show/report]...'' — approach sentence.
+Key quantitative result (e.g., ``achieving a Q-factor of X, representing a Y-fold improvement'').
+Significance sentence on impact for future photonic devices/systems.
+\end{abstract}
+
+% ─── Keywords ────────────────────────────────────────────────────────────────
+\keywords{photonics, nanophotonics, light–matter interaction, keyword4, keyword5}
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{Introduction}\label{sec:intro}
+
+Broad context: light–matter interaction, photonic integration, or relevant subfield.\cite{ref1}
+Specific challenge: what physical phenomenon or device functionality remains elusive.\cite{ref2,ref3}
+Prior work and why it is insufficient.\cite{ref4,ref5}
+``In this work, we...''\cite{ref6}
+Paper outline (optional).
+
+% ─── Results ─────────────────────────────────────────────────────────────────
+\section{Results}\label{sec:results}
+
+\subsection{Sample Design and Fabrication}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Device schematic, fabrication process, and structural characterization}
+  \caption{\textbf{Device architecture and fabrication.}
+           \textbf{a} Schematic of the photonic structure.
+           \textbf{b} SEM cross-section.
+           \textbf{c} Measured layer thickness profile.
+           Scale bars: \SI{1}{\micro\meter}.}
+  \label{fig:device}
+\end{figure}
+
+\subsection{Optical Characterization}
+
+\begin{figure*}[htbp]
+  \centering
+  \placeholder{Linear and nonlinear optical spectra, mode profiles, dispersion}
+  \caption{\textbf{Optical spectroscopy.}
+           \textbf{a}--\textbf{b} Reflection/transmission spectra (experiment vs.\ theory).
+           \textbf{c} Photonic band diagram.
+           \textbf{d} Near-field map at resonance wavelength.}
+  \label{fig:optics}
+\end{figure*}
+
+\subsection{Key Result}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Core device performance: emission, lasing, modulation, or sensing metrics}
+  \caption{\textbf{[Key result title].}
+           Panel descriptions (a)--(d).}
+  \label{fig:result}
+\end{figure}
+
+% ─── Discussion ──────────────────────────────────────────────────────────────
+\section{Discussion}\label{sec:discussion}
+
+Physical interpretation of the key result.
+Comparison with state of the art (table if helpful).
+Limitations and future improvements.
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+\section{Conclusion}\label{sec:conclusion}
+
+In summary, we have demonstrated...
+Key finding with numbers.
+Outlook for applications and follow-on work.
+
+% ─── Methods ─────────────────────────────────────────────────────────────────
+\section{Methods}\label{sec:methods}
+
+\subsection{Device Fabrication}
+
+\subsection{Optical Measurement Setup}
+
+\subsection{Numerical Simulations}
+
+\subsection{Data Analysis and Statistics}
+
+% ─── Declarations ────────────────────────────────────────────────────────────
+\section*{Declarations}
+
+\subsection*{Competing interests}
+The authors declare that they have no competing interests.
+
+\subsection*{Authors' contributions}
+% CRediT: A.O.: conceptualization, investigation, writing—original draft.
+% C.A.: supervision, funding acquisition, writing—review and editing.
+
+\subsection*{Funding}
+This work was supported by [Agency] (Grant No. XXX).
+
+\subsection*{Availability of data and materials}
+The data that support the findings are available from the corresponding author on reasonable request.
+
+% ─── Supplementary Information ───────────────────────────────────────────────
+% Upload as separate file; reference in text as (Supplementary Fig. S1)
+% \begin{suppinfo}
+%   Supplementary Fig. S1: ...
+% \end{suppinfo}
+
+% ─── References ──────────────────────────────────────────────────────────────
+% Numbered style [1]; use natbib \cite{}
+\bibliography{refs}
+
+\end{document}

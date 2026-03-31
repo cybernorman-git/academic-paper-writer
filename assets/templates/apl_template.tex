@@ -1,0 +1,123 @@
+% Applied Physics Letters (APL) Template
+% Publisher: AIP Publishing
+% Format: AIP Publishing LaTeX template (aipauth4-2 / aip class)
+% Article type: Letter (≤4 published pages incl. figures + refs)
+% Abstract: ≤250 words; single paragraph; no equations, refs, or graphics
+% Language: American English
+% Units: SI required
+
+% Download the official AIP template from Overleaf:
+% https://www.overleaf.com/latex/templates/template-for-submission-to-aip-publishing-journals/xhsskcchtbxf
+
+\documentclass[%
+  aip,
+  apl,           % Applied Physics Letters
+  amsmath,amssymb,
+  reprint,       % Use 'preprint' for double-spaced review copy
+  groupedaddress
+]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+
+% Placeholder macro for missing figures
+\newcommand{\placeholder}[1]{%
+  \fbox{\parbox{0.9\columnwidth}{\centering\small\textit{[FIGURE: #1]}}}}
+
+\begin{document}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+\title{Title of the Applied Physics Letters Manuscript}
+
+% ─── Authors ─────────────────────────────────────────────────────────────────
+\author{Author One}
+\author{Author Two}
+\author{Corresponding Author}
+\email{corresponding@email.com}
+
+\affiliation{Department of Applied Physics, University, City, Country}
+\affiliation{Additional affiliation if needed}
+
+\date{\today}
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+% Single paragraph, ≤250 words
+% Must state: new information + results of general interest + conclusions
+% No equations, no displayed math, no figure references, no citations
+\begin{abstract}
+Single-paragraph abstract (≤250 words).
+State the physical problem and its relevance.
+Describe the experimental or theoretical approach.
+Give the key quantitative result.
+Conclude with significance beyond the narrow specialty.
+\end{abstract}
+
+\maketitle
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+% APL Letters: max ~4 published pages. Be concise.
+% Lead paragraph must identify: (1) physical significance, (2) gap in knowledge,
+% (3) what this letter contributes.
+
+Physical context and relevance.\cite{ref1}
+Specific problem and gap in current understanding.\cite{ref2,ref3}
+Brief summary of prior attempts.\cite{ref4}
+``In this Letter, we report...''
+
+% ─── Experiment / Theory ─────────────────────────────────────────────────────
+% APL integrates methods into the narrative; no dedicated Methods section at end
+% Describe fabrication, measurement setup, and simulations inline
+
+Sample fabrication: [brief description of growth/lithography/deposition steps].
+Measurement setup: [laser source, cryostat, detection scheme].
+Simulation method: [FDTD/DFT/FEM, software, mesh density].
+
+% ─── Results and Discussion ──────────────────────────────────────────────────
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Main characterization: structure + optical/electrical response}
+  \caption{(a) Device schematic. (b) SEM image. (c) Measured spectrum
+           (solid) and simulation (dashed). (d) [Key metric] as a function of
+           [control parameter].}
+  \label{fig:fig1}
+\end{figure}
+
+Description of Fig.~\ref{fig:fig1} with key numerical results.
+Physical interpretation.\cite{ref5}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Key result: performance metric, comparison, or mechanism}
+  \caption{(a)--(d) [Description of each panel with units and conditions.]}
+  \label{fig:fig2}
+\end{figure}
+
+Analysis of Fig.~\ref{fig:fig2} and comparison with theory/literature.
+
+% APL: maximum ~3 figures for a 4-page Letter
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+
+In summary, we have demonstrated [key result with numbers].
+The underlying mechanism is [physical explanation].
+This work establishes [implication for the field and future devices].
+
+% ─── Supplementary Material ──────────────────────────────────────────────────
+\begin{acknowledgments}
+The authors thank...
+This work was supported by [Agency] (Grant No. XXX).
+\end{acknowledgments}
+
+% Author contributions, conflict of interest, data availability
+% (required by AIP; add as unnumbered sections if not auto-generated)
+
+% ─── References ──────────────────────────────────────────────────────────────
+\bibliography{refs}
+
+\end{document}

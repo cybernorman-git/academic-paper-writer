@@ -1,6 +1,6 @@
 ---
 name: academic-paper-writer
-description: End-to-end academic paper writing workflow for physics, 2D materials, optics, and condensed matter papers. Covers the full pipeline: literature collection into Zotero → PDF reading and synthesis → figure generation with Python → LaTeX writing in target journal style → compilation → simulated peer review. Use when: (1) user provides a research topic or dataset and wants a full paper drafted; (2) user asks to write a paper targeting ACS Nano, Nano Letters, PRB, PRL, Nature, Science, Nature Photonics, or similar journals; (3) user provides a paper outline and wants it filled in with proper academic content; (4) user needs figure scripts, LaTeX templates, or a compiled PDF output with reviewer comments.
+description: End-to-end academic paper writing workflow for physics, 2D materials, optics, photonics, and condensed matter papers. Covers the full pipeline: literature collection into Zotero → PDF reading and synthesis → figure generation with Python → LaTeX writing in target journal style → compilation → simulated peer review. Use when: (1) user provides a research topic or dataset and wants a full paper drafted; (2) user asks to write a paper targeting ACS Nano, Nano Letters, ACS Photonics, PRB, PRL, APL, Nature, Science, Science Advances, Nature Photonics, eLight, Advanced Materials, Advanced Functional Materials (AFM), or similar journals; (3) user provides a paper outline and wants it filled in with proper academic content; (4) user needs figure scripts, LaTeX templates, or a compiled PDF output with reviewer comments.
 ---
 
 # Academic Paper Writer
@@ -32,7 +32,7 @@ confirm figures            by section]                 ↓
 
 Collect from user:
 - Research topic / title hint
-- Target journal (see `references/journal-styles.md`)
+- Target journal (see `references/journal-styles.md` — supported: ACS Nano, Nano Letters, ACS Photonics, PRB, PRL, APL, Nature, Science, Science Advances, Nature Photonics, Nature Communications, eLight, Advanced Materials, AFM)
 - Available data files (CSV, numpy, images, raw figures)
 - Paper outline (optional — generate one if absent)
 - Special constraints (page limit, SI required, etc.)

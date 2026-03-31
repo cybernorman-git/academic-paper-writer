@@ -1,0 +1,162 @@
+% Science Advances Template
+% Publisher: AAAS (American Association for the Advancement of Science)
+% Template: AAAS LaTeX template (also on Overleaf)
+% Download: https://www.overleaf.com/gallery/tagged/aaas
+%
+% Article types: Research Article, Research Resource, Review, Protocol
+% Title: declarative phrase, 7–25 words, no punctuation; full ≤100 chars, short ≤40 chars
+% Abstract: 200–400 words; single paragraph; no citations; structure: background → objective → method → result → conclusion
+% Keywords: listed after abstract
+% Section numbering: up to 3 levels (1. / 1.1. / 1.1.1.)
+% Conclusion: optional
+% References: numbered [1] style; datasets cited as [dataset]
+% Figures: embedded in text; caption starts with bold "Figure X"; panels labeled lowercase (a, b, c)
+% SI units throughout
+
+% Use the official AAAS template; a minimal standalone version follows
+% for reference and drafting purposes:
+
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[version=4]{mhchem}
+\usepackage{lineno}    % line numbers for review
+\linenumbers
+
+% Figure caption style: "Figure X. Bold first sentence."
+\captionsetup[figure]{labelfont=bf, textfont=normal, labelsep=period}
+\captionsetup[table]{labelfont=bf, textfont=normal, labelsep=period}
+
+% Placeholder macro
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+    \fbox{\parbox{0.9\textwidth}{\centering\small\textit{[FIGURE: #1]}}}
+  \end{center}
+}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+% Declarative phrase (no period); 7–25 words; full ≤100 chars; short title ≤40 chars
+\title{\textbf{Declarative title stating the key finding of the study}}
+
+\author[1]{Author One}
+\author[1,2]{Author Two}
+\author[2*]{Corresponding Author}
+
+\affil[1]{Department of Physics, University Name, City, Country}
+\affil[2]{State Key Laboratory, Institute Name, City, Country}
+\affil[*]{Correspondence: corresponding@email.com}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+% 200–400 words; single paragraph; no citations; no figure refs
+% Structure: background → objective → method → result → conclusion
+\begin{abstract}
+\textbf{Background sentence(s):} Broad context and why the problem is important.
+\textbf{Objective:} What specific question or gap this study addresses.
+\textbf{Methods:} Brief description of the experimental and/or computational approach.
+\textbf{Results:} Key quantitative finding (include specific numbers and units).
+\textbf{Conclusion:} Interpretation and broader significance for the field.
+\end{abstract}
+
+\textbf{Keywords:} keyword1, keyword2, keyword3, keyword4, keyword5
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{Introduction}
+
+Broad scientific context.\cite{ref1}
+Specific knowledge gap or unresolved problem.\cite{ref2,ref3}
+Why existing approaches fail or are insufficient.\cite{ref4,ref5}
+``Here, we demonstrate/show/report...'' — one to two sentences on the approach and key findings.\cite{ref6}
+Brief paper outline (optional).
+
+% ─── Results ─────────────────────────────────────────────────────────────────
+\section{Results}
+
+\subsection{[First major finding]}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Device schematic / sample characterization figure}
+  \caption{\textbf{Figure 1. [Bold declarative title of what the figure shows.]}
+           (\textbf{a}) Schematic of the experimental setup.
+           (\textbf{b}) SEM image of the fabricated structure.
+           (\textbf{c}) Measured absorption spectrum.
+           Scale bars: \SI{500}{\nano\meter}.}
+  \label{fig:fig1}
+\end{figure}
+
+Description of Fig. 1 with quantitative values.
+Mechanistic interpretation.
+
+\subsection{[Second major finding]}
+
+\begin{figure*}[htbp]
+  \centering
+  \placeholder{Main results figure spanning full width}
+  \caption{\textbf{Figure 2. [Bold declarative title].}
+           (\textbf{a})--(\textbf{d}) Description of each panel.
+           Error bars represent SD; $n = X$ replicates.}
+  \label{fig:fig2}
+\end{figure*}
+
+\subsection{[Third major finding — e.g., mechanism or generalizability]}
+
+% ─── Discussion ──────────────────────────────────────────────────────────────
+\section{Discussion}
+
+Physical/mechanistic interpretation of the results.
+Comparison with prior state of the art (cite).
+Limitations and caveats.
+Broader implications.
+
+% ─── Conclusion (optional) ───────────────────────────────────────────────────
+% \section{Conclusion}
+% In summary, ...
+
+% ─── Materials and Methods ───────────────────────────────────────────────────
+\section{Materials and Methods}
+
+\subsection{Sample Preparation}
+
+\subsection{Experimental Setup}
+
+\subsection{Computational Methods}
+% Software name, version; parameters; validation
+
+\subsection{Statistical Analysis}
+% Describe all statistical tests used; define error bars; state n and replicates
+
+% ─── Supplementary Materials ─────────────────────────────────────────────────
+% Separate file; reference as "(fig. S1)" or "(table S1)" in text
+% \section*{Supplementary Materials}
+% Fig. S1. [Description.]
+
+% ─── Acknowledgments ─────────────────────────────────────────────────────────
+\section*{Acknowledgments}
+The authors thank...
+\textbf{Funding:} [Agency] (Grant No. XXX to C.A.); [Agency] (Grant No. YYY to A.O.).
+\textbf{Author contributions:} A.O. designed the experiment. T.W. performed simulations. All authors analyzed data. A.O. and C.A. wrote the manuscript.
+\textbf{Competing interests:} The authors declare no competing interests.
+\textbf{Data and materials availability:} All data are available in the main text or the Supplementary Materials.
+
+% ─── References ──────────────────────────────────────────────────────────────
+% Numbered style; [dataset] tag for data citations
+\bibliographystyle{scienceadv}   % or plain/unsrt depending on setup
+\bibliography{refs}
+
+\end{document}

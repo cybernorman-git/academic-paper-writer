@@ -1,0 +1,162 @@
+% ACS Photonics Template
+% Journal code: apchd5
+% Manuscript types: Article, Letter, Perspective, Review
+% Abstract: ≤250 words (Article) | opening paragraph serves as abstract (Letter)
+% Figures: 3.25" (1-col) or 7" (2-col), TIFF/PDF 300 dpi min
+% TOC graphic required (5.5 cm x 5 cm)
+
+\documentclass[journal=apchd5,manuscript=article]{achemso}
+% For Letter: manuscript=letter
+% For Review: manuscript=review
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+
+% Placeholder macro for missing figures
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+    \fbox{\parbox{0.9\columnwidth}{\centering\small\textit{[FIGURE: #1]}}}
+  \end{center}
+}
+
+% ─── Authors ─────────────────────────────────────────────────────────────────
+\author{Author One}
+\affiliation{Department of Physics, University of Somewhere, City, Country}
+
+\author{Author Two}
+\affiliation{Department of Physics, University of Somewhere, City, Country}
+
+\author{Corresponding Author}
+\email{corresponding@email.com}
+\affiliation{Department of Physics, University of Somewhere, City, Country}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+% No "New", "Novel", "First", "Superb", etc. in title
+% No acronyms unless universally known
+\title{Title of the ACS Photonics Paper}
+
+% ─── Keywords ────────────────────────────────────────────────────────────────
+% Up to 6 keywords (required for Review; optional for Article)
+% \keywords{photonics, nanophotonics, plasmonics, metasurface}
+
+\begin{document}
+
+% ─── Abstract ────────────────────────────────────────────────────────────────
+% ≤250 words; no citations, no abbreviations on first use
+% Formula: Context → Problem → Approach → Key result (with numbers) → Significance
+\begin{abstract}
+Context sentence explaining the broader field and why it matters.
+Problem sentence identifying the specific gap or challenge addressed here.
+Approach sentence describing what was done and the key methodology.
+Key result sentence with quantitative values (e.g., X-fold enhancement, \SI{532}{\nano\meter} excitation).
+Significance sentence stating the implications and potential applications.
+\end{abstract}
+
+% ─── TOC Graphic ─────────────────────────────────────────────────────────────
+\begin{tocentry}
+  % Required: 5.5 cm wide × 5 cm tall, ≤ 50 words of caption
+  \placeholder{TOC graphic: visual summary — schematic + key result}
+\end{tocentry}
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{Introduction}
+
+Broad context: why photonics/nanophotonics matters in this regime.\cite{ref1}
+Specific challenge: what physical mechanism or application is poorly understood or demonstrated.\cite{ref2,ref3}
+Prior art and limitations: what approaches have been tried, and where they fall short.\cite{ref4,ref5}
+Our approach: ``Here we demonstrate...'' / ``In this work, we report...''\cite{ref6}
+Brief outline of results: one or two sentences previewing the paper structure.
+
+% ─── Results and Discussion ──────────────────────────────────────────────────
+\section{Results and Discussion}
+
+% ACS Photonics commonly combines Results and Discussion
+
+\subsection{Sample Fabrication and Structural Characterization}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Device schematic and structural characterization (SEM, AFM, XRD)}
+  \caption{\textbf{Sample structure and characterization.}
+           (a) Schematic illustration of the device architecture.
+           (b) SEM image of the fabricated sample.
+           (c) AFM topography map.
+           (d) Optical photograph (scale bar: \SI{10}{\micro\meter}).}
+  \label{fig:structure}
+\end{figure}
+
+\subsection{Optical Response}
+
+\begin{figure*}[htbp]
+  \centering
+  \placeholder{Main optical characterization: transmission/reflection spectra, dispersion, near-field maps}
+  \caption{\textbf{Optical characterization.}
+           (a)--(b) Measured and simulated transmission spectra.
+           (c) Photonic band structure.
+           (d) Electric field distribution at resonance.}
+  \label{fig:optical}
+\end{figure*}
+
+\subsection{Key Physical Mechanism or Device Performance}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Key result figure: emission, modulation, detection, or sensing data}
+  \caption{\textbf{[Key result].}
+           Description of each panel (a)--(d).}
+  \label{fig:main_result}
+\end{figure}
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+\section{Conclusion}
+
+In summary, we have demonstrated...
+The key finding—[X result with numbers]—establishes...
+These results provide a route toward...
+Future work will...
+
+% ─── Methods / Experimental Section ─────────────────────────────────────────
+\section{Experimental Section}
+% ACS Photonics: "Experimental Section" placed after Conclusion
+
+\subsection{Sample Preparation}
+
+\subsection{Optical Measurements}
+
+\subsection{Numerical Simulations}
+% FDTD / COMSOL / DFT — describe software, mesh, boundary conditions
+
+\subsection{Data Analysis}
+
+% ─── Acknowledgments ─────────────────────────────────────────────────────────
+\begin{acknowledgement}
+The authors acknowledge...
+This work was supported by [Funding Agency] under Grant No. XXX.
+\end{acknowledgement}
+
+% ─── Author Contributions ────────────────────────────────────────────────────
+% Use CRediT taxonomy if required
+% \section*{Author Contributions}
+% A.O. and C.A. conceived the project. A.O. fabricated the samples.
+% T.W. performed simulations. All authors analyzed data and wrote the manuscript.
+
+% ─── Conflict of Interest ────────────────────────────────────────────────────
+% \section*{Conflict of Interest}
+% The authors declare no competing financial interest.
+
+% ─── Supporting Information ──────────────────────────────────────────────────
+\begin{suppinfo}
+Figure S1: [description].
+Figure S2: [description].
+This material is available free of charge via the Internet at \url{http://pubs.acs.org}.
+\end{suppinfo}
+
+% ─── References ──────────────────────────────────────────────────────────────
+\bibliography{refs}
+
+\end{document}

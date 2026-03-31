@@ -1,0 +1,189 @@
+% Advanced Functional Materials (AFM) Template
+% Publisher: Wiley-VCH
+% Submission: ScholarOne Manuscripts portal
+%
+% Article types:
+%   Full Paper  : ≤10 published pages (~7,500–8,000 words + figures)
+%   Communication: ≤5 published pages (~3,500–4,000 words + figures)
+%   Review      : ≤12,000 words
+%
+% Abstract (Full Paper): ≤200 words
+% Abstract (Communication): opening paragraph acts as abstract (no separate section)
+% Keywords: exactly 5
+% Graphical abstract: required; separate file, 5 × 12.7 cm, 300 dpi
+% Figures: TIFF/EPS/PDF, ≥300 dpi, with line numbers + double-spacing for review
+% References: numbered style [1]
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{authblk}
+\usepackage[version=4]{mhchem}
+\usepackage{lineno}    % required: line numbers throughout
+\usepackage{setspace}  % required: double spacing
+\doublespacing
+\linenumbers
+
+% Wiley/AFM prefers submission as a single compiled PDF with line numbers.
+% Figures embedded in text for review. Provide separate high-res files at acceptance.
+
+% Placeholder macro
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+    \fbox{\parbox{0.9\textwidth}{\centering\small\textit{[FIGURE: #1]}}}
+  \end{center}
+}
+
+% ─── Title ───────────────────────────────────────────────────────────────────
+% Must clearly state the functional advance; quantify performance if possible
+\title{\textbf{[Functional advance verb]-Enabled [Material/Device] with [Quantified Performance] for [Application]}}
+
+\author[1]{Author One}
+\author[1,2]{Author Two}
+\author[2*]{Corresponding Author}
+
+\affil[1]{Department Name, University Name, City, Country}
+\affil[2]{Institute Name, City, Country}
+\affil[*]{E-mail: corresponding@email.com}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% ─── Keywords ────────────────────────────────────────────────────────────────
+% Exactly 5 keywords required
+\noindent\textbf{Keywords:} functional materials, keyword2, keyword3, keyword4, keyword5
+
+% ─── Abstract (Full Paper) ───────────────────────────────────────────────────
+% ≤200 words; emphasize the functional advance and measured performance gain
+% For Communication: delete this block; opening paragraph IS the abstract
+\begin{abstract}
+Context sentence on the application need or materials challenge.
+Problem sentence: what functional property is limited by current approaches.
+Approach sentence: synthesis/fabrication/device strategy.
+Key quantitative result: [X-fold improvement / record value] in [functional metric].
+Broader significance: potential impact on [energy / electronics / biomedicine / etc.].
+\end{abstract}
+
+% ─── Introduction ────────────────────────────────────────────────────────────
+\section{Introduction}
+
+Broad functional materials context and application motivation.\cite{ref1}
+Current state of the art and performance benchmarks.\cite{ref2,ref3}
+Specific functional limitation or gap.\cite{ref4,ref5}
+How this work addresses the gap: mechanism, synthesis strategy, or device concept.
+``In this work, we demonstrate...'' with a preview of the key result.
+Brief outline of the paper.
+
+% ─── Results and Discussion ──────────────────────────────────────────────────
+\section{Results and Discussion}
+
+% AFM often combines Results and Discussion in a single section
+
+\subsection{Synthesis / Fabrication and Structural Characterization}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Synthesis scheme, XRD/SEM/TEM/AFM characterization panels}
+  \caption{\textbf{Figure 1.} \textbf{Structural characterization.}
+           a) Schematic illustration of the synthesis/fabrication route.
+           b) XRD pattern confirming phase purity.
+           c) SEM/TEM image (scale bar: \SI{200}{\nano\meter}).
+           d) AFM topography and height profile.}
+  \label{fig:structure}
+\end{figure}
+
+\subsection{Functional Properties and Performance}
+
+\begin{figure*}[htbp]
+  \centering
+  \placeholder{Core functional performance: electrical, optical, catalytic, or mechanical data}
+  \caption{\textbf{Figure 2.} \textbf{[Functional property] characterization.}
+           a)--b) Measured [property] as a function of [parameter].
+           c) Comparison with state-of-the-art benchmarks from the literature.
+           d) Stability/cycling/durability data.}
+  \label{fig:performance}
+\end{figure*}
+
+\subsection{Mechanism and Structure–Property Relationship}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{DFT/MD simulations or spectroscopic evidence for mechanism}
+  \caption{\textbf{Figure 3.} \textbf{Mechanistic understanding.}
+           a) DFT band structure / DOS / charge density difference.
+           b) XPS / Raman / NEXAFS spectra comparing pristine and functional state.
+           c) Proposed mechanism schematic.}
+  \label{fig:mechanism}
+\end{figure}
+
+\subsection{Device Demonstration or Application}
+
+\begin{figure}[htbp]
+  \centering
+  \placeholder{Device performance metrics and benchmark comparison}
+  \caption{\textbf{Figure 4.} \textbf{Device performance.}
+           a)-d) [Device metrics: efficiency, sensitivity, power density, etc.]}
+  \label{fig:device}
+\end{figure}
+
+% ─── Conclusion ──────────────────────────────────────────────────────────────
+\section{Conclusion}
+
+In summary, we have demonstrated [functional advance] by [mechanism/strategy].
+Key achievement: [quantified performance metric compared to prior benchmark].
+The structure–property relationship reveals [insight].
+This work opens a path toward [practical application].
+
+% ─── Experimental Section ────────────────────────────────────────────────────
+\section{Experimental Section}
+% AFM: Experimental Section after Conclusion
+
+\subsection{Materials}
+
+\subsection{Synthesis Procedure}
+
+\subsection{Characterization}
+% List all instruments with model numbers and settings
+
+\subsection{Device Fabrication}
+
+\subsection{Electrochemical / Optical / Mechanical Measurements}
+
+\subsection{Computational Details}
+% Software, functional, basis set, convergence criteria
+
+% ─── Supporting Information ──────────────────────────────────────────────────
+% Separate file; referenced as "Supporting Information Figure S1"
+\noindent\textbf{Supporting Information}
+
+Supporting Information is available from Wiley Online Library or from the author.
+
+% ─── Acknowledgements ────────────────────────────────────────────────────────
+\section*{Acknowledgements}
+The authors acknowledge...
+This work was supported by [Agency] (Grant No. XXX).
+
+\noindent\textbf{Author Contributions} (CRediT):
+A.O.: conceptualization, methodology, writing—original draft.
+C.A.: supervision, funding acquisition, writing—review \& editing.
+
+\noindent\textbf{Conflict of Interest:} The authors declare no conflict of interest.
+
+\noindent\textbf{Data Availability Statement:} Research data are available from the corresponding author on reasonable request.
+
+% ─── References ──────────────────────────────────────────────────────────────
+% AFM: numbered style [1]; use natbib unsrt or similar
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}
